@@ -35,7 +35,7 @@ function toConvert() {
         }
         if (romanNumber.value.substr(i0, 1) === 'v' || romanNumber.value.substr(i0, 1) === 'V') {
             if ((romanNumber.value.substr(i0, 1) === 'v' || romanNumber.value.substr(i0, 1) === 'V') && (romanNumber.value.substr(i2, 1) === 'i' || romanNumber.value.substr(i2, 1) === 'I')) {
-                res += 0
+                res += v
             } else if (romanNumber.value.substr(i0, 1) === 'v' || romanNumber.value.substr(i0, 1) === 'V') {
                 res += v
             }
@@ -46,14 +46,14 @@ function toConvert() {
             } else if ((romanNumber.value.substr(i0, 1) === 'x' || romanNumber.value.substr(i0, 1) === 'X') && (romanNumber.value.substr(i1, 1) === 'c' || romanNumber.value.substr(i1, 1) === 'C')) {
                 res += c - x
             } else if ((romanNumber.value.substr(i0, 1) === 'x' || romanNumber.value.substr(i0, 1) === 'X') && (romanNumber.value.substr(i2, 1) === 'i' || romanNumber.value.substr(i2, 1) === 'I')) {
-                res += 0
+                res += x
             } else {
                 res += x
             }
         }
         if (romanNumber.value.substr(i0, 1) === 'l' || romanNumber.value.substr(i0, 1) === 'L') {
             if ((romanNumber.value.substr(i0, 1) === 'l' || romanNumber.value.substr(i0, 1) === 'L') && (romanNumber.value.substr(i2, 1) === 'x' || romanNumber.value.substr(i2, 1) === 'X')) {
-                res += 0
+                res += l
             } else if (romanNumber.value.substr(i0, 1) === 'l' || romanNumber.value.substr(i0, 1) === 'L') {
                 res += l
             }
@@ -64,21 +64,21 @@ function toConvert() {
             } else if ((romanNumber.value.substr(i0, 1) === 'c' || romanNumber.value.substr(i0, 1) === 'C') && (romanNumber.value.substr(i1, 1) === 'm' || romanNumber.value.substr(i1, 1) === 'M')) {
                 res += m - c
             } else if ((romanNumber.value.substr(i0, 1) === 'c' || romanNumber.value.substr(i0, 1) === 'C') && (romanNumber.value.substr(i2, 1) === 'x' || romanNumber.value.substr(i2, 1) === 'X')) {
-                res += 0
+                res += c
             } else {
                 res += c
             }
         }
         if (romanNumber.value.substr(i0, 1) === 'd' || romanNumber.value.substr(i0, 1) === 'D') {
             if ((romanNumber.value.substr(i0, 1) === 'd' || romanNumber.value.substr(i0, 1) === 'D') && (romanNumber.value.substr(i2, 1) === 'c' || romanNumber.value.substr(i2, 1) === 'C')) {
-                res += 0
+                res += d
             } else if (romanNumber.value.substr(i0, 1) === 'd' || romanNumber.value.substr(i0, 1) === 'D') {
                 res += d
             }
         }
         if (romanNumber.value.substr(i0, 1) === 'm' || romanNumber.value.substr(i0, 1) === 'M') {
             if ((romanNumber.value.substr(i0, 1) === 'm' || romanNumber.value.substr(i0, 1) === 'M') && (romanNumber.value.substr(i2, 1) === 'c' || romanNumber.value.substr(i2, 1) === 'C')) {
-                res += 0
+                res += m
             } else if (romanNumber.value.substr(i0, 1) === 'm' || romanNumber.value.substr(i0, 1) === 'M') {
                 res += m
             }
